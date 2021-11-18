@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="author" content="2072026 Budi Santoso">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">      
+        <title>Soal 1</title>
+    </head>
+    <body>
+        <script>
+            let a = prompt("Berapa mawar yang ingin dibeli?(Rp 5000)")
+            let b = prompt("Berapa tulip yang ingin dibeli?(Rp 8000)")
+            let c = prompt("Berapa anggrek yang ingin dibeli?(Rp 10000)")
+            let pay = prompt("Uang yang dibayarkan adalah")
+
+            let mawar;
+            mawar = 5000;
+            tb = a*mawar
+
+            let tulip;
+            tulip = 8000;
+            tb1 = b*tulip
+
+            let anggrek;
+            anggrek = 10000;
+            tb2 =  c*anggrek
+
+            total = tb+tb1+tb2
+            byr = pay-total
+
+            document.write("Anda membeli mawar sebanyak " + "<b>" + a + " bunga</b>" + " dengan total Rp " + tb + "<br>")
+            document.write("Anda membeli tulip sebanyak " + "<b>" + b + " bunga</b>" + " dengan total Rp " + tb1 + "<br>")
+            document.write("Anda membeli anggrek sebanyak " + "<b>" + c + " bunga</b>" + " dengan total Rp " + tb2 + "<br>")
+            document.write("Total belanjaan anda Rp. " + "<b>" + total + "</b>" + "<br>" + "<br>")
+
+            if (byr>40000) {
+                document.write("Kembalian anda adalah Rp. " + byr)
+            }
+            else {
+                document.write("Uang anda tidak mencukupi!")
+            }
+        </script>
+    </body>
+</html>
